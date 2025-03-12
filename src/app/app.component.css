@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* app.component.css */
+body {
+    background: linear-gradient(to right, #4e54c8, #8f94fb);
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full page height */
+}
+
+
+
+
+
+nav {
+    margin-top: 10px; 
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    padding: 15px 0;
+    background-color: #ffffff;  /* Clean White Background */
+}
+
+nav a {
+    color: #333333ef;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    background-color: #ffffff;  /* Box Background */
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Soft individual box shadow */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav a:hover {
+    background-color: #071853;  /* Elegant Green Shade */
+    color: #fff;
+    transform: translateY(-2px);  /* Slight Lift for Interaction */
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2); /* Deeper Shadow Only on Hover */
+}
+
+h1 {
+    margin-top: 100px; /* Consistent spacing between sections */
+}
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* Vertical centering */
+    align-items: center;       /* Horizontal centering */
+    height: 10vh;             /* Full viewport height */
+    text-align: center;        /* Center text alignment */
+}
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #190b24;  /* Dark Indigo for a premium feel */
+    margin-bottom: 20px;
+    width: 100;
+    text-align: center;   
+}
+p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    color: #555;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    font-size: 1.2rem; /* Slightly larger font size */
+    line-height: 1.8; /* Increased line spacing for readability */
+    color: #333; /* Dark text color */
+    background-color: #f4f7fb; /* Light background for contrast */
+    padding: 20px; /* Padding around the paragraph */
+    border-radius: 10px; /* Rounded corners for the background */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px auto; /* Centered with margin on top and bottom */
+    width: 80%; /* Makes the paragraph take up most of the screen width */
+    /* text-align: justify; Justifies the text for a cleaner look */
+    margin-left: 90px;
+}
+
+
+.wave {
+    display: inline-block; /* Makes the emoji inline but allows styling */
+    animation: wave-animation 1.5s infinite; /* Apply animation */
+}
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0deg); /* Start with no rotation */
+    }
+    25% {
+        transform: rotate(50deg); /* Slightly rotate to the right */
+    }
+    50% {
+        transform: rotate(0deg); /* Return to the original position */
+    }
+    75% {
+        transform: rotate(10deg); /* Slightly rotate to the left */
+    }
+    100% {
+        transform: rotate(0deg); /* Return to the original position */
+    }
+}
+
+
+.image-container img {
+    width: 250px; /* You can adjust the size */
+    height: 250px; /* Make sure the height and width are the same for a circular shape */
+    border-radius: 200%; /* This creates the circle shape */
+    display: block;
+    margin-left: auto;
+    margin-right: 0; /* Moves the image to the right */
+    margin-top: -300px;
+    margin-left: 900px;
+}
+
+
+.social-icons {
+    display: flex; /* Use flexbox to align the icons */
+    justify-content: center; /* Centers the icons horizontally */
+    align-items: center; /* Centers the icons vertically */
+    gap: 20px; /* Adds spacing between the icons */
+    margin-top: 50px;
+}
+.social-icons img {
+    width: 30px; /* Adjust the size of the icon */
+    height: 30px; /* Ensure the image maintains a square shape */
+    transition: transform 0.3s ease; /* Adds a smooth hover effect */
+}
+.social-icons img:hover {
+    transform: scale(1.1); /* Slightly enlarges the icon on hover */
+}
+ /*home page done*/
+ 
+ #about {
+    background: linear-gradient(135deg, #f3e7e9, #e3eeff); 
+
+    border-radius: 15px;
+    max-width: 2000px;
+    width: 100%;
+    
+}
+h1 {
+    color: #010a01;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 44px;
+    width: 100%;
+}
+.achievements-title {
+    font-size: 25px; /* Adjust this size as needed */
+    color: #1a5276; /* Match the theme if needed */
+    
+}
+
+
+
+p {
+    background-color: #e3f2fd;
+    padding: 15px 20px;
+    border-left: 5px solid #011602de;
+    border-radius: 10px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    background-color: #e0effd;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ /*about page done*/
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ffffff, #f9f9f9);
+    margin: 0;
+    padding: 20px;
+    color: #2c3e50;
+}
+
+/* Project Section */
+#projects {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top:44px;
+
+}
+
+/* Main Title */
+h1 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+}
+
+
+/* Project Item */
+.project-item {
+    background: #e0effd;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.project-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Project Title */
+.project-item h2 {
+    font-size: 1.2rem;
+}
+
+/* Project Description */
+.project-item p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+
+
+
+
+
+/* Headings */
+h2 {
+    color: #fff;
+    font-size: 1.2rem; /* Increased size for other cards */
+}
+
+/* Paragraph and List Styling */
+p, li {
+    color: #0d0000;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* List Styling */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 0cqmax;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .project-card {
+        padding: 15px;
+    }
+}
+
+/*project page */
+#skills {
+    text-align: center;
+    padding: 0px;
+  }
+  .skills-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px; /* Space between items */
+}
+
+  .category {
+    background: #e3e8f5;
+    border-radius: 12px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: 250px;
+  }
+  .category h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+  }
+  img {
+    width: 30px;
+    height: 30px;
+  }
+  /*skil pade*/
+ 
+
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 80px;
+    color: #141414;
+}
+
+.contact-item {
+    margin: 15px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.contact-item a {
+    color: #1a5276;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+/*contact page*/
+.qualification-section {
+    text-align: center;
+    margin-top: 80px;
+    
+  }
+  
+  .qualifications-title {
+    font-size: 1.5rem; /* Adjust this size as needed */
+    color: #131414; /* Match the theme if needed */
+}
+
+  
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .timeline-item {
+    background: #f0f4f8;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .timeline-content h3 {
+    margin: 0;
+    color: #1d3557;
+    font-weight: bold;
+  }
+  
+  
+  
+  .inner-box p {
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+  }
+  
