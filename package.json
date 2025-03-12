@@ -1,21 +1,14 @@
-
 {
   "name": "portfolio",
   "version": "0.0.0",
   "homepage": "https://Srinidhi2822.github.io/portfolio",
-
-"scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build --output-path dist --base-href /portfolio/",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
-  },
-
-
-  
+ "scripts": {
+  "ng": "ng",
+  "start": "ng serve",
+  "build": "ng build --base-href /portfolio/",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist/portfolio"
+},
   "private": true,
   "dependencies": {
     "@angular/animations": "^18.2.0",
