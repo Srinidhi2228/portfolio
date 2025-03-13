@@ -12,17 +12,20 @@
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
+
           "options": {
+            
             "outputPath": "dist/portfolio",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "baseHref": "/portfolio/",
+
             "polyfills": [
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              
-                "src/assets",
+              "src/assets",
               "src/favicon.ico"
             ],
             "styles": [
@@ -32,6 +35,7 @@
           },
           "configurations": {
             "production": {
+              "outputHashing": "all",
               "budgets": [
                 {
                   "type": "initial",
@@ -39,12 +43,11 @@
                   "maximumError": "1MB"
                 },
                 {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "2kB",
-                  "maximumError": "4kB"
+                  "type": "initial",
+                  "maximumWarning": "2MB",
+                  "maximumError": "4MB"
                 }
-              ],
-              "outputHashing": "all"
+              ]
             },
             "development": {
               "optimization": false,
@@ -78,10 +81,8 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
-    "src/assets"
-],
-
-            
+              "src/assets"
+            ],
             "styles": [
               "src/styles.css"
             ],
@@ -92,6 +93,6 @@
     }
   },
   "cli": {
-    "analytics": "e8d14bb9-a82a-4b73-8fe2-7f7768a330af"
+    "analytics": false
   }
 }
