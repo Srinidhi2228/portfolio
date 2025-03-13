@@ -15,7 +15,7 @@
 
           "options": {
             
-            "outputPath": "dist/portfolio",
+            "outputPath": "src",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "baseHref": "/portfolio/",
